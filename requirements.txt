@@ -4,3 +4,4 @@ flask
 mlflow
 apache-airflow
 requests
+sklearn.datasets
