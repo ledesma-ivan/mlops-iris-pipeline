@@ -12,22 +12,24 @@ pip install -r requirements.txt
 Estructura del proyecto.
 
 mlops-iris/
-├── airflow/                # DAGs y config de Airflow
+├── airflow/                
 │   ├── dags/
 │   │   └── iris_pipeline.py
-│   └── Dockerfile          # (opcional) si dockerizas Airflow
-├── data/                   # Datos crudos y procesados
+│   └── Dockerfile          
+├── data/                   
 │   ├── raw/
 │   └── processed/
-├── models/                 # Modelos serializados
+├── notebook/   
+│   ├── EDA.IPYNB
+├── models/                
 ├── src/
-│   ├── ingest.py           # ya hecho
+│   ├── ingest.py           
 │   ├── train.py
 │   ├── test.py
-│   └── serve.py            # Flask app
+│   └── serve.py           
 ├── monitoring/
 │   └── monitor_latency.py
 ├── docker-compose.yml
-├── Dockerfile              # para la API Flask
+├── Dockerfile              
 ├── requirements.txt
 └── README.md
