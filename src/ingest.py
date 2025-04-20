@@ -9,5 +9,5 @@ df = pd.DataFrame(data.data, columns=data.feature_names)
 df['target'] = data.target
 
 # Guardo en formato Excel
-name = 'iris_dataset.xlsx' 
+name = 'mlops-iris-pipeline\data/iris_dataset.xlsx'
 df.to_excel(name, index=False) 
