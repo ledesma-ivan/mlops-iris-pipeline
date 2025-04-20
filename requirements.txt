@@ -5,3 +5,4 @@ mlflow
 apache-airflow
 requests
 openpyxl
+joblib
