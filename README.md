@@ -13,7 +13,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Estructura del proyecto\
+## Estructura del proyecto
 ```
 mlops-iris/
 ├── airflow/
