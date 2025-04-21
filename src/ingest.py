@@ -8,6 +8,6 @@ data = load_iris()
 df = pd.DataFrame(data.data, columns=data.feature_names)
 df['target'] = data.target
 
-# Guardo en formato Excel
-name = 'mlops-iris-pipeline\data/iris_dataset.xlsx'
-df.to_excel(name, index=False) 
+# Guardo en formato csv
+name = "mlops-iris-pipeline\data"
+df.to_csv(name, index=False) 
