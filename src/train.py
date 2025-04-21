@@ -37,7 +37,7 @@ def main():
         # Guardo el artefano localmente
         # El artefato se refiere al resultado del proceso que hicimos
         os.makedirs("models", exist_ok=True)
-        joblib.dump(clf, "models/iris_rf.pkl")
+        joblib.dump(clf, "mlops-iris-pipeline/models/iris_rf.pkl")
         # .4f establemos el formato que muestre solo 4 decimales nomas.
         print(f"Run ID: {mlflow.active_run().info.run_id} – Accuracy: {acc:.4f}")
 
