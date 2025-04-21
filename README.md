@@ -1,29 +1,24 @@
-Paso a paso
-1. Activar el entorno virtual
+# MLOps Iris Pipeline
 
+## Paso a paso
 
-En linux:
+### 1. Activar el entorno virtual
 python -m venv venv
 source venv/bin/activate
-En Windows:
-venv\Scripts\activate
 
-2. Instalar los requerimientos
-
+### 2. Instalar los requerimientos
 pip install -r requirements.txt
 
-
-🗂️ Estructura del proyecto
-
+## Estructura del proyecto
 mlops-iris/
-├── airflow/                
+├── airflow/
 │   ├── dags/
 │   │   └── iris_pipeline.py       # DAG principal de Airflow
 │   └── Dockerfile                 # Imagen de Airflow personalizada
-├── data/                   
+├── data/
 │   ├── raw/                      # Datos sin procesar
 │   └── processed/                # Datos procesados
-├── notebook/   
+├── notebook/
 │   └── EDA.ipynb                 # Análisis exploratorio de datos
 ├── models/                       # Modelos entrenados
 ├── src/
