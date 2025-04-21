@@ -11,12 +11,15 @@ import os
 MLFLOW_EXPERIMENT = "iris_demo"
 
 # Cargo los datos
+
+
 def main():
-    df = pd.read_csv("mlops-iris-pipeline\data\iris_dataset.csv")
+    df = pd.read_csv("mlops-iris-pipeline\\data\\iris_dataset.csv")
     X = df.drop("target", axis=1)
     y = df["target"]
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42)
 
     # Configuro MLflow
     mlflow.set_experiment(MLFLOW_EXPERIMENT)
@@ -39,7 +42,9 @@ def main():
         os.makedirs("models", exist_ok=True)
         joblib.dump(clf, "mlops-iris-pipeline/models/iris_rf.pkl")
         # .4f establemos el formato que muestre solo 4 decimales nomas.
-        print(f"Run ID: {mlflow.active_run().info.run_id} – Accuracy: {acc:.4f}")
+        print(
+            f"Run ID: {mlflow.active_run().info.run_id} – Accuracy: {acc:.4f}")
+
 
 if __name__ == "__main__":
     main()
