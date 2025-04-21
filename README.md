@@ -3,13 +3,18 @@
 ## Paso a paso
 
 ### 1. Activar el entorno virtual
+```
 python -m venv venv
 source venv/bin/activate
+```
 
 ### 2. Instalar los requerimientos
+```
 pip install -r requirements.txt
+```
 
-## Estructura del proyecto
+## Estructura del proyecto\
+```
 mlops-iris/
 ├── airflow/
 │   ├── dags/
@@ -32,3 +37,4 @@ mlops-iris/
 ├── Dockerfile                    # Dockerfile raíz
 ├── requirements.txt              # Dependencias del proyecto
 └── README.md                     # Documentación
+```
