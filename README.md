@@ -1,6 +1,7 @@
-🚀 Paso a paso
+Paso a paso
 1. Activar el entorno virtual
-bash
+
+
 En linux:
 python -m venv venv
 source venv/bin/activate
@@ -8,10 +9,12 @@ En Windows:
 venv\Scripts\activate
 
 2. Instalar los requerimientos
-bash
+
 pip install -r requirements.txt
+
+
 🗂️ Estructura del proyecto
-bash
+
 mlops-iris/
 ├── airflow/                
 │   ├── dags/
